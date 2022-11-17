@@ -115,6 +115,7 @@ extension TemporalSpec {
 extension TimeZone {
     /// Utility UTC ("Coordinated Universal Time") TimeZone instance.
     public static var utc: TimeZone {
-        TimeZone(abbreviation: "UTC")!
+      TimeZone.current
+      //TimeZone(abbreviation: "UTC")!
     }
 }
